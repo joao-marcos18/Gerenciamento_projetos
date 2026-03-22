@@ -1,4 +1,8 @@
 package com.example.exercicio9.repositories;
 
-public interface ProjetosRepository {
+import com.example.exercicio9.models.ProjetosModel;
+import org.springframework.data.jpa.repository.JpaRepository;
+
+public interface ProjetosRepository extends JpaRepository<ProjetosModel, Long> {
+
 }
